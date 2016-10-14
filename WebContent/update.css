@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+.update_input{
+	height:40;
+	width:200;
+	font-size:20;
+}
+table{
+	margin:0 auto;
+	border:solid 3px;
+	padding:20px;
+	border-collapse:collapse;
+}
+td,th{
+	text-align:center;
+	height:40;
+	width:200;
+	border:solid 1px;
+}
+th{
+	font-size:24;
+}
+form{
+	margin:150 30 150 30;
+}
+body{
+	background-color:#80ff80;
+	font-family:Microsoft Yahei;
+}
+.submit{
+	margin:30 43%;
+	width:200;
+	height:40;
+	font-size:24;
+}

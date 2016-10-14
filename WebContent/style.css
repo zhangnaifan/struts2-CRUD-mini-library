@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+.create_book {
+	position: absolute;
+	left: 80%;
+	height: 40;
+	width: 180;
+	font-size: 18;
+}
+
+.transparent {
+	border: 0;
+}
+
+.search_button {
+	height: 40;
+	width: 100;
+	font-size: 20;
+}
+
+.search_input {
+	font-size: 20;
+}
+
+.search_input, .book_name {
+	height: 40;
+	width: 250;
+}
+
+p {
+	font-size: 20;
+	margin: 30 120 30 120;
+}
+
+body {
+	font-family: Microsoft Yahei;
+	background-color: #ffff80;
+}
+
+h1 {
+	margin: 100 100 100 50;
+	color: #008000;
+	text-align: center;
+	font-size: 40;
+}
+
+h1:hover {
+	font-size: 60
+}
+
+table {
+	margin: 0 auto; border : solid 1px;
+	padding: 20px;
+	border-collapse: collapse;
+	border: solid 1px;
+}
+
+td, th {
+	text-align: center;
+	height: 40;
+	width: 100;
+	border: solid 1px;
+}
+
+.header {
+	font-size: 20;
+}
+
+a:active {
+	color: #00ff00;
+}

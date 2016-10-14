@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+        
+        <default-action-ref name="index" />
+
+        <global-results>
+            <result name="error">
+				<param name="actionName">errorProcessor</param>
+			</result>
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+        
+        <action name="errorProcessor" class="com.action.BooksAction" method="popCreate">
+        	<result>index.jsp</result>
+        </action>
+        
+        <action name="index" class="com.action.BooksAction" method="popCreate">
+            <result>index.jsp</result>
+        </action>
+        
+        <action name ="Query" class="com.action.BooksAction">
+            <result>result.jsp</result>
+        </action>
+        
+        <action name ="Delete" class="com.action.BooksAction" method="delete">
+            <result>result.jsp</result>
+        </action>
+        
+        <action name ="Show" class="com.action.BooksAction" method="showAndUpdate">
+            <result>show.jsp</result>
+        </action>
+        
+        <action name ="popUpdate" class="com.action.BooksAction" method="showAndUpdate">
+            <result>update.jsp</result>
+        </action>   
+        
+        <action name ="Update" class="com.action.BooksAction" method="update">
+            <result>result.jsp</result>        	
+        </action>        
+        
+        <action name ="popCreate" class="com.action.BooksAction" method="popCreate">
+            <result>create.jsp</result>
+        </action>    
+        
+        <action name ="Create" class="com.action.BooksAction" method="create">
+            <result>createSUCCESS.jsp</result>
+            <result name="NEW_AUTHOR">create_author.jsp</result>
+            <result name="CREATE_FAIL">createFAIL.jsp</result>
+        </action>
+        
+        <action name ="CreateAuthor" class="com.action.BooksAction" method="createAuthor">
+            <result>createSUCCESS.jsp</result>
+        </action>    
+        
+    </package>
+</struts>
