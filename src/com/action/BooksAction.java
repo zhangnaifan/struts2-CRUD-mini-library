@@ -49,13 +49,11 @@ public class BooksAction
     return this.info;
   }
   
-  public void setInfo(String info)
-  {
+  public void setInfo(String info){
     this.info = info;
   }
   
-  public String execute()
-  {
+  public String execute(){
     init();
     return "success";
   }
